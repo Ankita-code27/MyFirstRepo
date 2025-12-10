@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Responsive Product Grid</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ background: #f5f5f5;
+ padding: 20px;
+ }
+    h2 {
+text-align: center;
+margin-bottom: 20px;
+}                                       
+.grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr); 
+gap: 20px;
+}
+
+.card {
+background: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+padding: 16px;
+text-align: center;
+}
+.card img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 6px;
+margin-bottom: 10px;
+}
+.card h3 {
+font-size: 18px;
+margin: 8px 0;
+}
+.card p {
+font-size: 14px;
+color: #555;
+margin: 4px 0;
+}
+.price {
+font-weight: bold;
+color: #007bff;
+}
+
+@media (max-width: 1024px) {
+.grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+ @media (max-width: 600px) {
+ .grid {
+ grid-template-columns: 1fr; 
+ }
+ }
+ </style>
+</head>
+<body>
+ <h2>Responsive Product Grid</h2><div class="grid">
+ <div class="card">
+ <img src="https://www.boat-lifestyle.com/cdn/shop/files/Scene_05_Purple_800x.png?v=1717817883" alt="Earbuds">
+ <h3>Earbuds</h3>
+ <p>High-quality item with great features.</p>
+ <p class="price">₹499</p>
+ </div>
+            <div class="card">
+<img src="https://carltonlondonbeauty.com/cdn/shop/files/2_8e8d0dfe-efcb-4cc2-a40a-5ab407b1ca38.jpg?v=1737531759&width=1000" alt="Watches">
+<h3>Watches</h3>
+<p>Durable and stylish for daily use.</p>
+<p class="price">₹799</p>
+</div>
+<div class="card">
+<img src="https://oyela.in/cdn/shop/files/3_e8f19bac-1fee-4547-a75b-e7aa06e8f3aa.jpg?v=1746600153&width=900" alt="Jacket">
+<h3>Jacket</h3>
+<p>Lightweight and comfortable.</p>
+<p class="price">₹1,299</p>
+</div>
+ <div class="card">
+ <img src="https://aire.store/cdn/shop/files/1_1_c37479c2-5239-4f15-b247-d407d1698c13.jpg?v=1762250319&width=600" alt="Bracelet">
+ <h3>Bracelet</h3>
+ <p>Trendy design with premium quality.</p>
+ <p class="price">₹999</p>
+ </div>
+ </div>
+</body>
+</html>
+
+<h2>By Ankita<h2>
+<h2>2025B01010284</h2>
